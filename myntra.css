@@ -1,70 +1,88 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Myntra application </title>
-    <link rel="stylesheet" href="firstapp.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-    <script src="https://kit.fontawesome.com/94d8aaafad.js" crossorigin="anonymous"></script>
-</head> 
-<body>
-    <header>
-        <div class="logo">
-            <a href="#" class="logoimage">
-                <img src="image/myntra_logo.webp" style="height: 36px; width: 53px;" alt="MYNTRA">
-            </a>
-        </div>
-        <div class="nav_bar" style="text-decoration: none;">
-            <a href="https://www.myntra.com/men-topwear" style="text-decoration: none;"> MEN</a>
-            <a href="https://www.myntra.com/womens-western-wear" style="text-decoration: none;">WOMEN</a>
-            <a href="resume.html" style="text-decoration: none;">KIDS</a>
-            <a href="" style="text-decoration: none;">HOME</a>
-            <a href="" style="text-decoration: none;">BEAUTY</a>
-            <a href="" style="text-decoration: none;">GenZ</a>
-        </div>
-        
-        <div class="studio" style="margin-bottom: 8px;">STUDIO <sup style="color: rgb(255, 0, 0);">new</sup></div>
-        <div class="search_bar">
-            <span  style="background-color: rgb(238, 238, 238); " class="material-symbols-outlined searchicon" >search
-                </span>
-            <input class="bar" placeholder="search for - products brand and more">
-        </div>
-        <div class="action_bar">
-            <div  class="profileicon a1">
-                <i class="fa-regular fa-user profile1"></i>
-                <br>
-                <span class="profile">Profile</span>
-            </div> 
-
-            <div style="margin-left: 10%;" class="wishlisticon a1">
-                <i style="" class="fa-regular fa-heart wishlist1"></i>
-                <br>
-                <span class="profile">Wishlist</span>
-            </div> 
-
-            <div style="margin-left: 10%;" class="bagicon a1">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <br>
-                <span style="margin-top: 5%;" class="profile">Bag</span>
-            </div> 
-        </div>
-    </header>
-    <main></main>
+*{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #8b8282;
     
-    <div class="banner">
-        <img class="banner_image" style="width: 100%; margin: 40PX 0;" src="image/banner.jpg" alt="banner image">
-    </div>
-    <div class="categeory_name">MEDAL WORTHY BRANDS TO BAG</div>
-    <div class="categeory_item">
-        <a href=""><img src="image/1.jpg" alt=""></a>
-        <a href=""><img src="image/2.jpg" alt=""></a>
-        <a href=""><img src="image/3.jpg" alt=""></a>
-        <a href=""><img src="image/4.jpg" alt=""></a>
-        <a href=""><img src="image/5.jpg" alt=""></a>
-        <a href=""><img src="image/6.jpg" alt=""></a>
-    </div>
+}
+.logoimage{
+    height: 36px;
+    width: 53px;
+}
+.logo{
+    margin-left: 4%;
+}
+.nav_bar{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
 
-    <footer></footer>
     
-</body>
-</html>
+}
+.nav_bar a{
+    padding: 28px 0;
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+.nav_bar a:hover{
+    border-bottom: 4px solid red;
+}
+.bar{
+    
+    align-items: center;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    border-radius:0 4px 4px 0;
+    border: 0;
+
+}
+.searchicon{ 
+    box-sizing: content-box;
+    border-radius: 4px 0 0 4px ;
+
+}
+.search_bar{
+    margin-left: 5px;
+    height: 40px;
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.action_bar{
+    display: flex;
+    width: 200px;
+    margin-right: 5%;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.a1{
+    padding: 19px 0;
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+.a1:hover{
+    border-bottom: 4px solid red;
+}
+.categeory_name{
+    height: 10px;
+    font-size: 20px;
+    margin: 50px 0 10px 30px ;
+    font-weight: 700;
+    color: #373333;
+}
+.categeory_item{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    justify-content: space-between;
+}
